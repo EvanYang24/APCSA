@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description:Tools for Submission of TT 1.0.
+description: Tools for Submission of TT 1.0.
 categories: [markdown]
 title: TT 1.0.0 Tools and Equipment
 ---
