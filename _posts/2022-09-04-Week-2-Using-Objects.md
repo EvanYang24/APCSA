@@ -16,6 +16,6 @@ title: Week 2 Using Objects
 
 Code.org Learning (1-15 Done)
 
--[Code.org Key Learnings](https://EvanYang24.github.io/APCSA/markdown/2022/09/05/code.org-key-learning.html)
+-[Code.org Key Learnings](![image](https://user-images.githubusercontent.com/111528360/188698484-0d29880f-b952-461c-b6c2-b12f214c1a4a.png))
 
 ![image](https://user-images.githubusercontent.com/72475804/188256044-da17caf6-765a-4037-88ab-d347bae9feac.png)
