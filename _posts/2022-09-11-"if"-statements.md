@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Lessons on "if" statements
 categories: [markdown]
-title: "if" statements
+title: Lessons on "if" statements
 ---
 
 #  Lessons on "if" statements 
