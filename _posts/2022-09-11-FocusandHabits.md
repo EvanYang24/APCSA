@@ -16,6 +16,8 @@ title: Focus and Habits
 -Have alot of money
 ![image](https://user-images.githubusercontent.com/111528360/189578861-23391ce4-f475-4b76-8167-62add7f31cde.png)
 
+-Be a famous Chemist
+![image](https://user-images.githubusercontent.com/111528360/189579591-3448f0fa-7e5c-4034-bb6a-bf18a2fc675c.png)
 
 # Focus and Habits
 - I Had taken away that I need to avoid depression because it is not good
