@@ -1,197 +1,226 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Python Notebook | fastpages</title>
-<meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Python Notebook" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://evanyang24.github.io/APCSA/2022/09/11/if-statements.html" />
-<meta property="og:url" content="https://evanyang24.github.io/APCSA/2022/09/11/if-statements.html" />
-<meta property="og:site_name" content="fastpages" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-09-11T00:00:00-05:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Python Notebook" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-11T00:00:00-05:00","datePublished":"2022-09-11T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Python Notebook","mainEntityOfPage":{"@type":"WebPage","@id":"https://evanyang24.github.io/APCSA/2022/09/11/if-statements.html"},"url":"https://evanyang24.github.io/APCSA/2022/09/11/if-statements.html"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/APCSA/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://evanyang24.github.io/APCSA/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/APCSA/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+<h2 id="lesson-on-if-statements">Lesson on “if” Statements</h2>
+<h1 id="if-statements-are-used-to-run-a-method-based-on-if-something-specifically-described-happens">if statements are used to run a method based on if something specifically described happens.</h1>
+<p>import java.util.Scanner;
+Scanner scanner = new Scanner(System.in);</p>
 
-<script>
-function wrap_img(fn) {
-    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
-        var elements = document.querySelectorAll(".post img");
-        Array.prototype.forEach.call(elements, function(el, i) {
-            if (el.getAttribute("title") && (el.className != "emoji")) {
-                const caption = document.createElement('figcaption');
-                var node = document.createTextNode(el.getAttribute("title"));
-                caption.appendChild(node);
-                const wrapper = document.createElement('figure');
-                wrapper.className = 'image';
-                el.parentNode.insertBefore(wrapper, el);
-                el.parentNode.removeChild(el);
-                wrapper.appendChild(el);
-                wrapper.appendChild(caption);
-            }
-        });
-    } else { document.addEventListener('DOMContentLoaded', fn); }
+<p>double x;
+double y;</p>
+
+<p>System.out.print(“Enter the first number: “);</p>
+
+<p>x = scanner.nextDouble();</p>
+
+<p>System.out.println(x);</p>
+
+<p>System.out.print(“Enter the second number: “);</p>
+
+<p>y = scanner.nextDouble();</p>
+
+<p>System.out.println(y);</p>
+
+<p>if (x &gt; y) {
+  System.out.println(x + “ is greater than “ + y);
+}</p>
+<h1 id="if-else--if-the-specific-condition-is-true-then-proceed-below-and-run-the-method-but-if-the-condition-is-false-then-proceed-with-the-different-set-of-instructions-defined">if-else – if the specific condition is true then proceed below and run the method BUT if the condition is false then proceed with the different set of instructions defined</h1>
+<p>import java.util.Scanner;
+Scanner scanner = new Scanner(System.in);</p>
+
+<p>double x;
+double y;</p>
+
+<p>System.out.print(“Enter the first number: “);</p>
+
+<p>x = scanner.nextDouble();</p>
+
+<p>System.out.println(x);</p>
+
+<p>System.out.print(“Enter the second number: “);</p>
+
+<p>y = scanner.nextDouble();</p>
+
+<p>System.out.println(y);</p>
+
+<p>if (x &gt; y) {
+  System.out.println(x + “ is greater than “ + y);
+} else {
+    System.out.println(y + “ is greater than “ + x);
+}</p>
+<h1 id="if-elseif-else--if-the-specific-condition-is-true-then-proceed-below-and-run-the-method-but-if-the-condition-is-not-met-try-the-next-condition-and-if-the-condition-is-met-run-this-code-segment-now-if-both-of-the-conditions-are-false-then-proceed-with-the-different-set-of-instructions-defined">if-elseif-else – if the specific condition is true then proceed below and run the method BUT if the condition is not met try the next condition and if the condition is met run this code segment now if both of the conditions are false then proceed with the different set of instructions defined</h1>
+<p>import java.util.Scanner;
+Scanner scanner = new Scanner(System.in);</p>
+
+<p>double x;
+double y;</p>
+
+<p>System.out.print(“Enter the first number: “);</p>
+
+<p>x = scanner.nextDouble();</p>
+
+<p>System.out.println(x);</p>
+
+<p>System.out.print(“Enter the second number: “);</p>
+
+<p>y = scanner.nextDouble();</p>
+
+<p>System.out.println(y);</p>
+
+<p>if (x &gt; y) {
+  System.out.println(x + “ is greater than “ + y);
+} else if (x == y) {
+  System.out.println(x + “ is equal to “ + y);
 }
-window.onload = wrap_img;
-</script>
+else {
+    System.out.println(y + “ is greater than “ + x);
+}</p>
+<h1 id="create-and-if-elseif-elseif-elsif-else-statement-5-or-more-conditions">Create and if-elseif-elseif-elsif-else statement, 5 or more conditions.</h1>
+<p>import java.util.Scanner;
+Scanner scanner = new Scanner(System.in);</p>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function(){
-    // add link icon to anchor tags
-    var elem = document.querySelectorAll(".anchor-link")
-    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
-    });
-</script>
-</head>
-<body><header class="site-header">
+<p>double x;
+double y;</p>
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/APCSA/">fastpages</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+<p>System.out.print(“Enter the first number: “);</p>
 
-        <div class="trigger"><a class="page-link" href="/APCSA/about/">About Me</a><a class="page-link" href="/APCSA/search/">Search</a><a class="page-link" href="/APCSA/categories/">Tags</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<p>x = scanner.nextDouble();</p>
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Python Notebook</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-11T00:00:00-05:00" itemprop="datePublished">
-        Sep 11, 2022
-      </time>
-       • <span class="read-time" title="Estimated read time">
-    
-    
-      1 min read
-    
-</span></p>
+<p>System.out.println(x);</p>
 
-    
+<p>System.out.print(“Enter the operator (+,-,*,/): “);</p>
 
-    
-      
-        <div class="pb-5 d-flex flex-justify-center">
-          <div class="px-2">
+<p>char operator = scanner.next().charAt(0);</p>
 
-    <a href="https://github.com/EvanYang24/APCSA/tree/master/_notebooks/2022-09-11-"if"-statements.ipynb" role="button" target="_blank">
-<img class="notebook-badge-image" src="/APCSA/assets/badges/github.svg" alt="View On GitHub">
-    </a>
-</div>
+<p>System.out.println(operator);</p>
 
-          <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/EvanYang24/APCSA/master?filepath=_notebooks%2F2022-09-11-%22if%22-statements.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/APCSA/assets/badges/binder.svg" alt="Open In Binder"/>
-    </a>
-</div>
+<p>System.out.print(“Enter the second number: “);</p>
 
-          <div class="px-2">
-    <a href="https://colab.research.google.com/github/EvanYang24/APCSA/blob/master/_notebooks/2022-09-11-"if"-statements.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/APCSA/assets/badges/colab.svg" alt="Open In Colab"/>
-    </a>
-</div>
-          <div class="px-2">
-  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FEvanYang24%2FAPCSA%2Fblob%2Fmaster%2F_notebooks%2F2022-09-11-%22if%22-statements.ipynb" target="_blank">
-      <img class="notebook-badge-image" src="/APCSA/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
-  </a>
-</div>
+<p>y = scanner.nextDouble();</p>
 
-        </div>
-      </header>
+<p>System.out.println(y);</p>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <!--
-#################################################
-### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
-#################################################
-# file to edit: _notebooks/2022-09-11-"if"-statements.ipynb
--->
+<p>if (operator == ‘+’) {
+  System.out.println(x + y);
+} else if (operator == ‘-‘) {
+  System.out.println(x - y);
+} else if (operator == ‘*’) {
+  System.out.println(x * y);
+} else if (operator == ‘/’) {
+  System.out.println(x / y);
+} else {
+  System.out.println(“Invalid operator”);
+}</p>
+<h1 id="covert-the-5-or-more-decisions-to-a-switch-case-case-case-case-otherwise">Covert the 5 or more decisions to a switch-case-case-case-case-otherwise.</h1>
+<p>double num1, num2;</p>
 
-<div class="container" id="notebook-container">
-        
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<p>// Take input from the user
+Scanner scanner = new Scanner(System.in);</p>
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Evan&#39;s Python Notebook&quot;</span><span class="p">)</span>
-</pre></div>
+<p>System.out.print(“Enter the first number: “);</p>
 
-    </div>
-</div>
-</div>
+<p>// take the inputs
+num1 = scanner.nextDouble();</p>
 
-<div class="output_wrapper">
-<div class="output">
+<p>System.out.println(num1);</p>
 
-<div class="output_area">
+<p>System.out.print(“Enter the operator (+,-,*,/): “);</p>
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello World
-Evan&#39;s Python Notebook
-</pre>
-</div>
-</div>
+<p>char operator = scanner.next().charAt(0);</p>
 
-</div>
-</div>
+<p>System.out.println(operator);</p>
 
-</div>
-    
+<p>System.out.print(“Enter second number: “);</p>
 
-</div>
+<p>num2 = scanner.nextDouble();</p>
 
+<p>System.out.println(num2);</p>
 
+<p>double output = 0;</p>
 
-  </div><a class="u-url" href="/APCSA/2022/09/11/if-statements.html" hidden></a>
-</article>
+<p>switch (operator) {</p>
 
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/APCSA/"></data>
+<p>// case to add two numbers
+case ‘+’:</p>
 
-  <div class="wrapper">
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>output = num1 + num2;
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p class="feed-subscribe">
-          <a href="/APCSA/feed.xml">
-            <svg class="svg-icon orange">
-              <use xlink:href="/APCSA/assets/minima-social-icons.svg#rss"></use>
-            </svg><span>Subscribe</span>
-          </a>
-        </p>
-      </div>
-      <div class="footer-col">
-        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
-      </div>
-    </div>
+break;
+</code></pre></div></div>
 
-    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/APCSA/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/APCSA/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
-</div>
+<p>// case to subtract two numbers
+case ‘-‘:</p>
 
-  </div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>output = num1 - num2;
 
-</footer>
-</body>
+break;
+</code></pre></div></div>
 
-</html>
+<p>// case to multiply two numbers
+case ‘*’:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>output = num1 * num2;
+
+break;
+</code></pre></div></div>
+
+<p>// case to divide two numbers
+case ‘/’:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>output = num1 / num2;
+
+break;
+</code></pre></div></div>
+
+<p>default:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>System.out.println("Invalid input");
+
+break; }
+</code></pre></div></div>
+
+<p>System.out.println(“The final result: “);</p>
+
+<p>// print the final result
+System.out.println(num1 + “ “ + operator + “ “ + num2 + “ = “ + output);</p>
+<h2 id="de-morgans-law">De Morgan’s Law</h2>
+<h1 id="in-the-1800s-augustus-de-morgan-created-the-demorgan-laws-they-demonstrate-how-to-handle-a-complicated-conditional-negation-which-is-a-conditional-statement-that-has-several-conditions-connected-by-and--or--or--such-as-x-3--y--2">In the 1800s, Augustus De Morgan created the DeMorgan laws. They demonstrate how to handle a complicated conditional negation, which is a conditional statement that has several conditions connected by and (&amp;&amp;), or (||), or (||), such as (x 3) &amp;&amp; (y &gt; 2).</h1>
+
+<h1 id="the-same-as-not-a-or-not-a-and-b-not-b-this-is-written-as-in-java-a--b---a---b">The same as “not a” or “not (a and b)” (not b). This is written as! in Java. (a &amp;&amp; b) == ! a || ! b</h1>
+
+<h1 id="the-equivalent-of-not-a-or-b-is-not-a-and-not-b-this-is-written-as-in-java-a--b---a---b">The equivalent of not (a or b) is not (a) and (not b). This is written as! in Java. (a || b) == ! a &amp;&amp; ! b</h1>
+
+<h1 id="the-negation-modifies-each-conditional">The negation modifies each conditional:</h1>
+
+<h1 id="-becomes-">&lt; becomes &gt;=</h1>
+<h1 id="becomes-">becomes &lt;=</h1>
+
+<h1 id="-becomes--1">== becomes !=</h1>
+<h1 id="-becomes--2">&lt;= becomes &gt;</h1>
+<h1 id="-becomes--3">= becomes &lt;</h1>
+
+<h1 id="-becomes--4">!= becomes ==</h1>
+<p>public class DeMorgansAndTest
+{
+   public static void main(String[] args)
+   {
+     int x = 6;
+     int y = 3;
+     System.out.println(!(x &gt; 6 &amp;&amp; y &lt; 3));
+     // prints true if x is not &gt; 6 OR y is not &lt; 3
+     // prints false otherwise
+     // this output should be true as x IS &gt; 6 BUT y IS NOT &lt; 3
+   }
+}</p>
+
+<p>DeMorgansAndTest.main(null)
+public class DeMorgansOrTest
+{
+   public static void main(String[] args)
+   {
+     int x = 0;
+     int y = 5;
+     System.out.println(!(x &lt; 3 || y &gt; 2));
+     // prints true if x is not &lt; 3 AND y is not &gt; 2
+     // prints false otherwise
+     // this output should be false as x IS &gt; 3 AND y IS &gt; 2
+   }
+}
+DeMorgansOrTest.main(null)</p>
