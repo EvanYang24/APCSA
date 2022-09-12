@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: "if" statements
+description: Lessons on "if" statements
 categories: [markdown]
-title: Lessons on "if" statements
+title: "if" statements
 ---
 #  Lessons on "if" statements 
 ## If Statements
