@@ -19,6 +19,9 @@ title: Focus and Habits
 -Be a famous Chemist
 ![image](https://user-images.githubusercontent.com/111528360/189579591-3448f0fa-7e5c-4034-bb6a-bf18a2fc675c.png)
 
+-Bench 315
+![image](https://user-images.githubusercontent.com/111528360/189973799-c1c0548d-b3ed-48af-b3a1-ff81123e4eb0.png)
+
 # Focus and Habits
 - I Had taken away that I need to avoid depression because it is not good
 - Like in the video it had explained how College students get depressed often and I had compared that to Del Norte in how many of our students get depressed as well.
