@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>fastpages | An easy to use blogging platform with support for Jupyter Notebooks.</title>
+<title>RonaldoJokesAPI | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="fastpages" />
+<meta property="og:title" content="RonaldoJokesAPI" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
 <meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://evanyang24.github.io/APCSA/404.html" />
-<meta property="og:url" content="https://evanyang24.github.io/APCSA/404.html" />
+<link rel="canonical" href="https://evanyang24.github.io/APCSA/jokesapi/" />
+<meta property="og:url" content="https://evanyang24.github.io/APCSA/jokesapi/" />
 <meta property="og:site_name" content="fastpages" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="fastpages" />
+<meta property="twitter:title" content="RonaldoJokesAPI" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"fastpages","url":"https://evanyang24.github.io/APCSA/404.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"RonaldoJokesAPI","url":"https://evanyang24.github.io/APCSA/jokesapi/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/APCSA/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://evanyang24.github.io/APCSA/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/APCSA/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -69,26 +69,113 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ronaldo Jokes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+
+    .APIContainer {
+        margin: 50px auto 150px auto;
+        padding: 20px 20px 20px 20px;
+        border: 1px solid darkgray;
+        border-radius: 5px;
+        width: 40%;
+        min-width: 500px;
+        height: 20%;
+    }
+
+    .marginTopBottom {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    
+    .jokeContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .jokeTitle {
+        margin-left: 10px;
+    }
+
+    #joke {
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: medium;
+        color: rgb(255, 69, 36);
+    }
+
+    #buttonGetJoke {
+        margin-left: auto;
+    }
+
 </style>
 
-<div class="container">
-  <h1>404</h1>
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<body>
+<!-- Chuck Norris jokes -->
+<div class="display-4 text-center" style="color: white">Ronaldo is HIM</div>
+<div class="APIContainer">
+    <div class="jokeContainer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" width="307px" height="460.5px">
+        <div>
+            <a class="h2 jokeTitle" style="color: #bb1919">Joke</a>
+            <p id="joke"></p>
+        </div>
+        <button class="btn btn-primary" id="buttonGetJoke">Next Joke</button>
+    </div>
 </div>
+</body>
 
+<script>
+
+    (function onLoad()
+    {
+        // set a function for each button
+        setButtonFunctions();
+
+        // fetch from each API when the page loads
+        getJoke();
+    })();
+
+    function setButtonFunctions()
+    {
+        document.getElementById('buttonGetJoke').onclick = getJoke;
+        }
+
+    // Chuck Norris jokes
+    async function getJoke()
+    {
+        await fetch("https://geek-jokes.p.rapidapi.com/api?format=json", {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "geek-jokes.p.rapidapi.com",
+                "x-rapidapi-key": "9fb1283360mshedc514375b603d6p156a26jsna7cd4ca5744a"
+            }
+        })
+            .then(response => response.json())
+            .then(response => {
+                console.log(response);
+
+                // display data
+                document.getElementById('joke').innerHTML = (response.joke.replaceAll('Chuck Norris', 'Cristiano Ronaldo'));
+
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    }
+</script>
+
+
+
+</html>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/APCSA/"></data>
