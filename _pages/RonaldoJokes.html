@@ -55,7 +55,7 @@ search_exclude: true
 </style>
 
 <body>
-<!-- Chuck Norris jokes -->
+<!-- Ronaldo jokes -->
 <div class="display-4 text-center" style="color: white">Ronaldo is HIM</div>
 <div class="APIContainer">
     <div class="jokeContainer">
@@ -85,7 +85,7 @@ search_exclude: true
         document.getElementById('buttonGetJoke').onclick = getJoke;
         }
 
-    // Chuck Norris jokes
+    // Ronaldo jokes
     async function getJoke()
     {
         await fetch("https://geek-jokes.p.rapidapi.com/api?format=json", {
@@ -100,7 +100,7 @@ search_exclude: true
                 console.log(response);
 
                 // display data
-                document.getElementById('joke').innerHTML = (response.joke.replaceAll('Chuck Norris', 'Cristiano Ronaldo'));
+                document.getElementById('joke').innerHTML = (response.joke.replaceAll('Ronaldo', 'Cristiano Ronaldo'));
 
             })
             .catch(err => {
